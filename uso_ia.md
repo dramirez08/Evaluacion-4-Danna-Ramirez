@@ -29,4 +29,5 @@
 
 ## 6. Reflexión crítica final
 
-Pendiente de redactar por la autora con su propia experiencia. Para preparar esta sección, describe una decisión que puedas explicar con el código (tema, cupos o cancelación de la API), un riesgo de aceptar propuestas sin revisarlas y la prueba concreta que puedas repetir para defender tu implementación.
+Este portafolio me ayudo mucho a organizar mis proyectos creados y perfeccionar el diseño de la pagina a comparacion del primer portafolio, se ve mejor profesionalmente, aprendi a implementar APIS a mi proyecto gracias a lo que hemos visto en clases, he aprendido a utilizar un buen uso etico de la IA. Siento que he aprendido mucho en este ramo desarrollo de Frontend, me ha entusiasmado por como se pueden decorar las paginas web que yo misma voy creando.
+
