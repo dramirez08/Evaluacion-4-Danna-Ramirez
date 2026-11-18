@@ -7,6 +7,7 @@ import { TestimonialsSection } from './components/TestimonialsSection'
 import { CommissionsPage } from './pages/CommissionsPage'
 import { HomePage } from './pages/HomePage'
 import { NotFoundPage } from './pages/NotFoundPage'
+import { ProjectsPage } from './pages/ProjectsPage'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route element={<SiteLayout />}>
           <Route index element={<HomePage />} />
           <Route path="galeria" element={<GallerySection standalone />} />
+          <Route path="proyectos" element={<ProjectsPage />} />
           <Route path="sobre-mi" element={<AboutSection standalone />} />
           <Route path="testimonios" element={<TestimonialsSection standalone />} />
           <Route path="contacto" element={<ContactSection standalone />} />

@@ -30,6 +30,7 @@ export const heroImages: readonly string[] = [art7, art14, art6, art1]
 export const navigationItems: readonly NavigationItem[] = [
   { path: '/', label: 'Inicio' },
   { path: '/galeria', label: 'Galería' },
+  { path: '/proyectos', label: 'Proyectos' },
   { path: '/sobre-mi', label: 'Sobre mí' },
   { path: '/testimonios', label: 'Testimonios' },
   { path: '/contacto', label: 'Contacto' },
