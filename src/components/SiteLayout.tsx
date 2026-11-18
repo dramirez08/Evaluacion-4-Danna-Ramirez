@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { portfolioIdentity } from '../data/portfolio'
+import { ResponsivePreview } from './ResponsivePreview'
 import { SiteHeader } from './SiteHeader'
 
 export function SiteLayout() {
@@ -28,6 +29,7 @@ export function SiteLayout() {
       <footer className="site-footer">
         <p>© 2026 Danna Ramirez | Ilustraciones y comisiones ⸜(｡˃ ᵕ ˂ )⸝♡</p>
       </footer>
+      <ResponsivePreview />
     </>
   )
 }

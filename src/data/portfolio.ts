@@ -17,7 +17,7 @@ import art16 from '../assets/ilustraciones/16.jpeg'
 import art17 from '../assets/ilustraciones/17.jpeg'
 import art18 from '../assets/ilustraciones/18.jpeg'
 import icon from '../assets/ilustraciones/icon.jpg'
-import type { Artwork, ContactChannel, NavigationItem, PortfolioIdentity, Testimonial } from '../types/portfolio'
+import type { Artwork, ArtworkFilterOption, ContactChannel, NavigationItem, PortfolioIdentity, PreviewSize, Testimonial } from '../types/portfolio'
 
 export const portfolioIdentity: PortfolioIdentity = {
   artistName: 'Danna',
@@ -37,24 +37,35 @@ export const navigationItems: readonly NavigationItem[] = [
 ]
 
 export const artworks: readonly Artwork[] = [
-  { id: 3, image: art3, alt: 'Ilustración de Dayko' },
-  { id: 1, image: art1, alt: 'Ilustración de Varesa' },
-  { id: 2, image: art2, alt: 'Icono con solo lineart' },
-  { id: 4, image: art4, alt: 'Dayko bailando con su chico' },
-  { id: 5, image: art5, alt: 'Ilustración de Mabel' },
-  { id: 6, image: art6, alt: 'Ilustración de Varesa tomando batido de frutillas' },
-  { id: 7, image: art7, alt: 'Ilustración de Vitsenya Halloween' },
-  { id: 8, image: art8, alt: 'Ilustración de un personaje para Blue Archive' },
-  { id: 9, image: art9, alt: 'Ilustración tradicional de Lula' },
-  { id: 10, image: art10, alt: 'Dayko en la playa' },
-  { id: 11, image: art11, alt: 'Dayko abejita' },
-  { id: 12, image: art12, alt: 'Ilustración para el año nuevo chino del dragón 2024' },
-  { id: 13, image: art13, alt: 'Ilustración de Ronova de Genshin Impact' },
-  { id: 14, image: art14, alt: 'Ilustración de Umamusume' },
-  { id: 15, image: art15, alt: 'Ilustración de Elyra' },
-  { id: 16, image: art16, alt: 'Ilustración de Lorina' },
-  { id: 17, image: art17, alt: 'Ilustración de Prickect' },
-  { id: 18, image: art18, alt: 'Ilustración de Alice junto a Grimm' },
+  { id: 3, image: art3, alt: 'Ilustración de Dayko', medium: 'digital' },
+  { id: 1, image: art1, alt: 'Ilustración de Varesa', medium: 'digital' },
+  { id: 2, image: art2, alt: 'Icono con solo lineart', medium: 'digital' },
+  { id: 4, image: art4, alt: 'Dayko bailando con su chico', medium: 'digital' },
+  { id: 5, image: art5, alt: 'Ilustración de Mabel', medium: 'digital' },
+  { id: 6, image: art6, alt: 'Ilustración de Varesa tomando batido de frutillas', medium: 'digital' },
+  { id: 7, image: art7, alt: 'Ilustración de Vitsenya Halloween', medium: 'digital' },
+  { id: 8, image: art8, alt: 'Ilustración de un personaje para Blue Archive', medium: 'digital' },
+  { id: 9, image: art9, alt: 'Ilustración tradicional de Lula', medium: 'traditional' },
+  { id: 10, image: art10, alt: 'Dayko en la playa', medium: 'digital' },
+  { id: 11, image: art11, alt: 'Dayko abejita', medium: 'digital' },
+  { id: 12, image: art12, alt: 'Ilustración para el año nuevo chino del dragón 2024', medium: 'digital' },
+  { id: 13, image: art13, alt: 'Ilustración de Ronova de Genshin Impact', medium: 'digital' },
+  { id: 14, image: art14, alt: 'Ilustración de Umamusume', medium: 'digital' },
+  { id: 15, image: art15, alt: 'Ilustración de Elyra', medium: 'digital' },
+  { id: 16, image: art16, alt: 'Ilustración de Lorina', medium: 'digital' },
+  { id: 17, image: art17, alt: 'Ilustración de Prickect', medium: 'digital' },
+  { id: 18, image: art18, alt: 'Ilustración de Alice junto a Grimm', medium: 'digital' },
+]
+
+export const artworkFilters: readonly ArtworkFilterOption[] = [
+  { value: 'all', label: 'Todas' },
+  { value: 'digital', label: 'Digital' },
+  { value: 'traditional', label: 'Tradicional' },
+]
+
+export const previewSizes: readonly PreviewSize[] = [
+  { mode: 'tablet', label: 'Tablet', width: 768 },
+  { mode: 'mobile', label: 'Celular', width: 390 },
 ]
 
 export const testimonials: readonly Testimonial[] = [

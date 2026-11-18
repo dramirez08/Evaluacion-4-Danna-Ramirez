@@ -1,7 +1,7 @@
 .site-header {
   background: var(--bar-gradient);
   color: #fff;
-  border-bottom: 3px solid var(--accent);
+  border-bottom: 3px solid var(--header-accent);
   padding: 0.6rem 0;
 }
 
@@ -9,8 +9,8 @@
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 0.5rem;
 }
@@ -29,8 +29,27 @@
   flex: none;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--header-accent);
 }
+
+.site-header__controls { display: flex; gap: 0.25rem; }
+
+.site-header__control {
+  width: 2.75rem;
+  height: 2.75rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #ffffffad;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.site-header__control:hover { background: #ffffff33; }
+.site-header__control[aria-pressed='true'] { background: var(--header-accent); color: var(--accent-ink); }
+
+.site-header__nav { display: none; grid-column: 1 / -1; }
+.site-header__nav--open { display: block; }
 
 .site-header__links {
   margin: 0;
@@ -53,11 +72,23 @@
 
 .site-header__link:hover { background: #ffffff33; }
 .site-header__link--active { text-decoration: underline; text-underline-offset: 0.3em; }
-.site-header__link--commissions { background: var(--accent); color: var(--accent-ink); }
+.site-header__link--commissions { background: var(--header-accent); color: var(--accent-ink); }
 .site-header__link--commissions:hover { background: #fff; }
 .site-header :focus-visible { outline-color: #fff; }
 
 @media (min-width: 600px) {
   .site-header { position: sticky; top: 0; z-index: 50; }
-  .site-header__inner { flex-direction: row; flex-wrap: wrap; justify-content: space-between; }
+  .site-header__control--menu { display: none; }
+  .site-header__nav { display: block; }
+}
+
+@media (min-width: 1000px) {
+  .site-header__inner { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .site-header__controls { grid-column: 3; grid-row: 1; }
+  .site-header__nav { grid-column: 2; grid-row: 1; }
+  .site-header__links { justify-content: end; }
+}
+
+@media (max-width: 359px) {
+  .site-header__brand { gap: 0.5rem; font-size: 0.95rem; }
 }
