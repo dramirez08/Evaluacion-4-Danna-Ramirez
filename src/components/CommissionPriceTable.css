@@ -1,0 +1,12 @@
+.commission-prices__scroll { overflow-x: auto; }
+.commission-prices__table { width: 100%; border-collapse: collapse; }
+.commission-prices__caption { color: var(--muted); padding-bottom: 0.5rem; text-align: left; font-size: 0.9rem; }
+
+.commission-prices__column, .commission-prices__row, .commission-prices__cell {
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.commission-prices__column { background: #3b1d6b; color: #f3d9ff; }
+.commission-prices__row { background: var(--surface); color: var(--heading); }
