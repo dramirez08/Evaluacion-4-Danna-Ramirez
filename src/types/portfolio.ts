@@ -23,6 +23,8 @@ export interface Artwork {
   image: string
   alt: string
   medium: ArtworkMedium
+  width: number
+  height: number
 }
 
 export type ArtworkMedium = 'digital' | 'traditional'

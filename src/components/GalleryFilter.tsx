@@ -2,6 +2,7 @@ import { useId } from 'react'
 import type { ChangeEvent } from 'react'
 import { artworkFilters } from '../data/portfolio'
 import type { GalleryFilterProps } from '../types/portfolio'
+import './GalleryFilter.css'
 
 export function GalleryFilter({ value, onChange, resultCount }: GalleryFilterProps) {
   const filterId = useId()
