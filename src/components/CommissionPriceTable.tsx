@@ -6,7 +6,7 @@ export function CommissionPriceTable() {
   return (
     <section className="panel commission-prices" aria-labelledby="titulo-precios">
       <h2 id="titulo-precios" className="panel__title">Tabla de Precios</h2>
-      <div className="commission-prices__scroll">
+      <div className="commission-prices__scroll" role="region" aria-label="Tabla desplazable de precios" tabIndex={0}>
         <table className="commission-prices__table">
           <caption className="commission-prices__caption">Precios base por tipo de dibujo y técnica</caption>
           <thead>

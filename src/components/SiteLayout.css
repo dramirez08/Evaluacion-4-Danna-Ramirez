@@ -1,0 +1,35 @@
+.site-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-layout__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.site-layout__skip {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 100;
+  transform: translateY(-150%);
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #20122d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.site-layout__skip:focus {
+  transform: translateY(0);
+}
+
+.site-footer {
+  background: var(--bar-gradient);
+  color: #fff;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}

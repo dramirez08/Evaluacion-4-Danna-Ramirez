@@ -23,10 +23,10 @@ export function GallerySection({ standalone = false }: SectionProps) {
       <Heading id="titulo-galeria" className="panel__title">⤷ ゛ Mi Galería de Dibujos ˎˊ˗</Heading>
       <GalleryFilter value={filter} onChange={setFilter} resultCount={visible.length} />
       <ul className="gallery">
-        {visible.map(({ id, image, alt }) => (
+        {visible.map(({ id, image, alt, width, height }) => (
           <li key={id}>
             <button type="button" className="gallery__item" aria-label={`Abrir visor: ${alt}`} onClick={() => setSelectedId(id)}>
-              <img className="gallery__image" src={image} alt={alt} loading="lazy" />
+              <img className="gallery__image" src={image} alt={alt} width={width} height={height} loading="lazy" />
             </button>
           </li>
         ))}

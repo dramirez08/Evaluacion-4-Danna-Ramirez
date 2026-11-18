@@ -1,0 +1,9 @@
+.status-message {
+  padding: 1rem;
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+.status-message--error {
+  border-inline-start: 4px solid var(--error);
+}

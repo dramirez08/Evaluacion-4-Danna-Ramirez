@@ -1,4 +1,5 @@
 import type { StatusMessageProps } from '../types/github'
+import './StatusMessage.css'
 
 export function StatusMessage({ variant, message }: StatusMessageProps) {
   return (
