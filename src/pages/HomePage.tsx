@@ -1,5 +1,19 @@
-import { portfolioIdentity } from '../data/portfolio'
+import { AboutSection } from '../components/AboutSection'
+import { ContactSection } from '../components/ContactSection'
+import { GallerySection } from '../components/GallerySection'
+import { Hero } from '../components/Hero'
+import { TestimonialsSection } from '../components/TestimonialsSection'
 
 export function HomePage() {
-  return <h1>{portfolioIdentity.artistName}</h1>
+  return (
+    <>
+      <Hero />
+      <div className="container">
+        <GallerySection />
+        <AboutSection />
+        <TestimonialsSection />
+        <ContactSection />
+      </div>
+    </>
+  )
 }
