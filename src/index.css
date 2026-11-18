@@ -14,6 +14,8 @@
   --focus: #f8b531;
   --field: #140626;
   --field-border: #8f6fc4;
+  --error: #ff9fb8;
+  --success: #a6e8bc;
   --bar-gradient: linear-gradient(135deg, #3f1670, #6c33b1);
   color-scheme: dark;
 }
@@ -30,6 +32,8 @@
   --focus: #642470;
   --field: #fff;
   --field-border: #79598c;
+  --error: #951341;
+  --success: #176138;
   color-scheme: light;
 }
 

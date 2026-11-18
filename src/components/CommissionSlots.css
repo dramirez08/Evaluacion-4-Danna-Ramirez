@@ -1,0 +1,14 @@
+.commission-slots { margin: 0; padding-left: 1.5rem; }
+.commission-slots__item { margin-bottom: 0.6rem; }
+.commission-slots__entry { margin-inline-end: 0.5rem; overflow-wrap: anywhere; }
+
+.commission-slots__remove {
+  background: #a3154d;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
+
+.commission-slots__remove:hover { background: #7d0f3a; }

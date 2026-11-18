@@ -81,9 +81,3 @@ export interface ContactChannel {
   platform: string
   handle: string
 }
-
-export interface CommissionPrice {
-  type: string
-  digital: number
-  traditional: number
-}
