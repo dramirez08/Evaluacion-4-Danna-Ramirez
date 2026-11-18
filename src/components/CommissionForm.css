@@ -1,0 +1,41 @@
+.commission-form { display: grid; gap: 1rem; }
+.commission-form__row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+.commission-form__field { display: grid; align-content: start; gap: 0.3rem; min-width: 0; }
+
+.commission-form__field label, .commission-form__calculator legend {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.commission-form__field :is(input, select, textarea) {
+  width: 100%;
+  min-width: 0;
+  padding: 0.6rem 0.75rem;
+  background: var(--field);
+  color: var(--text);
+  border: 1px solid var(--field-border);
+  border-radius: 6px;
+}
+
+.commission-form__field textarea { resize: vertical; }
+.commission-form__field [aria-invalid='true'] { border-color: var(--error); }
+
+.commission-form__calculator {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.commission-form__calculator legend { padding: 0 0.3rem; }
+.commission-form__total { color: var(--accent); font-size: 1.15rem; font-weight: 700; }
+.commission-form__error { color: var(--error); }
+.commission-form__confirmation { color: var(--success); overflow-wrap: anywhere; }
+.commission-form__submit { margin-top: 0; }
+
+@media (min-width: 600px) {
+  .commission-form__row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
